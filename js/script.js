@@ -47,3 +47,16 @@ for(i = 0; i < studenti.length; i++) {
   // Stampa solo Nome + Cognome
   console.log(studenti[i].nome + '  ' + studenti[i].cognome);
 }
+
+
+// PUNTO 3
+// Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+var nome, cognome, eta;
+
+nome = prompt('Inserire Nome');
+cognome = prompt('Inserire Cognome');
+eta = parseInt(prompt('Inserire età'));
+
+studenti.push({nome, cognome, eta});
+console.log(studenti);
